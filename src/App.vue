@@ -50,11 +50,7 @@ export default {
           <img src="./assets/buy-dc-power-visa.svg" alt="Power">
           <h3>Dc Power Visa</h3>
         </div>
-
       </div>
-
-
-
     </div>
 
   </main>
