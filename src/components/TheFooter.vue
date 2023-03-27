@@ -57,7 +57,7 @@ export default {
                     text: 'Term of use'
                 },
                 {
-                    text: 'Privacy policy (New)'
+                    text: 'Privacy policy(New)'
                 },
                 {
                     text: 'Ad Choices'
@@ -106,8 +106,41 @@ export default {
                 },
 
 
-            ]
+            ],
+            imageName: [
+                {
+                    img: 'footer-facebook.png'
 
+                },
+                {
+                    img: 'footer-twitter.png'
+
+                },
+
+                {
+                    img: 'footer-youtube.png'
+
+                },
+                {
+                    img: 'footer-pinterest.png'
+
+                },
+                {
+                    img: 'footer-periscope.png'
+
+                },
+
+
+            ],
+
+
+        }
+
+    },
+    methods: {
+        getImagePath: function (img) {
+            console.log(img)
+            return new URL(`../assets/${img}`, import.meta.url).href;
 
         }
     }
@@ -154,11 +187,8 @@ export default {
 
             <div class="follow">
                 <h1>Follow Us</h1>
-                <img src="../assets/footer-facebook.png" alt="Logo Fcebook">
-                <img src="../assets/footer-twitter.png" alt="Logo Twitter">
-                <img src="../assets/footer-youtube.png" alt="Logo Youtube">
-                <img src="../assets/footer-pinterest.png" alt="Logo Pinterest">
-                <img src="../assets/footer-periscope.png" alt="Logo Periscope">
+                <img v-for="(img, index) in imageName " key="index" :src="getImagePath(img.img)" alt="Logo Facebook">
+
 
 
             </div>
