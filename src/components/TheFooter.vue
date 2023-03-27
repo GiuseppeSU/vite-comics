@@ -60,7 +60,23 @@ export default {
         </div>
     </div>
     <div class="container-bottom">
-        <h1>adsfsfafasffasfasf</h1>
+        <div class="text-footer">
+            <button>SIGN-UP NOW!</button>
+
+
+            <div class="follow">
+                <h1>Follow Us</h1>
+                <img src="../assets/footer-facebook.png" alt="Logo Fcebook">
+                <img src="../assets/footer-twitter.png" alt="Logo Twitter">
+                <img src="../assets/footer-youtube.png" alt="Logo Youtube">
+                <img src="../assets/footer-pinterest.png" alt="Logo Pinterest">
+                <img src="../assets/footer-periscope.png" alt="Logo Periscope">
+
+
+            </div>
+
+        </div>
+
 
     </div>
 </template>

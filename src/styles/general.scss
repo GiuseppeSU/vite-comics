@@ -129,12 +129,55 @@
         position: absolute;
         top: -45px;
         left: 50px;
+
     }
 }
 
 
 .container-bottom {
     height: 100px;
-
+    z-index: 999999999;
+    display: flex;
+    align-items: center;
     background-color: variables.$color-secondary;
+
+
+
+
+    .text-footer {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+
+    }
+
+    .text-footer button {
+        padding: 10px;
+        border: 3px solid variables.$color-primary;
+        background-color: variables.$color-secondary;
+        color: variables.$color-white;
+
+    }
+
+    .follow {
+        display: flex;
+        padding-left: 20px;
+
+    }
+
+    .follow img {
+        margin-left: 10px;
+
+    }
+
+
+    .follow h1 {
+        color: variables.$color-primary;
+        margin-right: 20px;
+
+    }
 }
