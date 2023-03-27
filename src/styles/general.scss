@@ -89,6 +89,7 @@
 .container-footer {
     background-image: url(./assets/footer-bg.jpg);
     background-repeat: repeat;
+    z-index: 998;
 
 
     .container-text {
@@ -136,10 +137,11 @@
 
 .container-bottom {
     height: 100px;
-    z-index: 999999999;
+    z-index: 999;
     display: flex;
     align-items: center;
     background-color: variables.$color-secondary;
+    position: relative;
 
 
 
