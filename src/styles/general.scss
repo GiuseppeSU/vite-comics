@@ -46,3 +46,42 @@
 
     }
 }
+
+
+.container-mid {
+    background-color: variables.$color-primary;
+
+
+
+    .container-items {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+    }
+
+
+
+
+    .first-item {
+        display: flex;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+        padding: 40px 30px;
+    }
+
+    .first-item img {
+        height: 60px;
+
+    }
+
+    h3 {
+        margin-left: 20px;
+        color: variables.$color-white;
+
+    }
+
+
+}

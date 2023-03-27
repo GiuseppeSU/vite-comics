@@ -25,10 +25,35 @@ export default {
     </div>
 
     <div class="container-mid">
-      <div class="first-item">
-        <img src="" alt="">
+      <div class="container-items">
+        <div class="first-item">
+          <img src="./assets/buy-comics-digital-comics.png" alt="Digital comics">
+          <h3>Digital Comics</h3>
+        </div>
+
+        <div class="first-item">
+          <img src="./assets/buy-comics-merchandise.png" alt="Merchandise">
+          <h3>Dc Merchandise</h3>
+        </div>
+
+        <div class="first-item">
+          <img src="./assets/buy-comics-subscriptions.png" alt="Subscription">
+          <h3>Subscription</h3>
+        </div>
+
+        <div class="first-item">
+          <img src="./assets/buy-comics-shop-locator.png" alt="shop-locator">
+          <h3>Comic Shop Locator</h3>
+        </div>
+
+        <div class="first-item">
+          <img src="./assets/buy-dc-power-visa.svg" alt="Power">
+          <h3>Dc Power Visa</h3>
+        </div>
 
       </div>
+
+
 
     </div>
 
