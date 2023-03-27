@@ -3,6 +3,50 @@ export default {
     name: 'TheHeader',
     data() {
         return {
+            navBar: [
+                {
+                    text: 'Characters'
+
+                },
+                {
+                    text: 'Comics'
+
+                },
+                {
+                    text: 'Movies'
+
+                },
+                {
+                    text: 'Tv'
+
+                },
+                {
+                    text: 'Games'
+
+                },
+                {
+                    text: 'Còllectibles'
+
+                },
+                {
+                    text: 'Video'
+
+                },
+                {
+                    text: 'Fans'
+
+                },
+                {
+                    text: 'News'
+
+                },
+                {
+                    text: 'Shop'
+
+                },
+
+
+            ]
 
         }
     }
@@ -18,16 +62,8 @@ export default {
         </div>
         <div class="link-nav">
             <ul class="list">
-                <li class="item">Characters</li>
-                <li class="item">Comics</li>
-                <li class="item">Movies</li>
-                <li class="item">Tv</li>
-                <li class="item">Games</li>
-                <li class="item">Còllectibles</li>
-                <li class="item">Video</li>
-                <li class="item">Fans</li>
-                <li class="item">News</li>
-                <li class="item">Shop</li>
+                <li v-for="(link, index) in navBar" class="item" key="index">{{ link.text }}</li>
+
             </ul>
         </div>
     </div>
