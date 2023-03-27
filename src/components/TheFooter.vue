@@ -3,6 +3,111 @@ export default {
     name: 'TheFooter',
     data() {
         return {
+            menuLinks: [
+                {
+                    text: 'Characters'
+
+                },
+                {
+                    text: 'Comics'
+
+                },
+                {
+                    text: 'Movies'
+
+                },
+                {
+                    text: 'Tv'
+
+                },
+                {
+                    text: 'Games'
+
+                },
+                {
+                    text: 'Còllectibles'
+
+                },
+                {
+                    text: 'Video'
+
+                },
+                {
+                    text: 'Fans'
+
+                },
+
+            ],
+
+            shopComics: [
+                {
+                    text: 'Shop DC'
+
+                },
+
+                {
+                    text: 'Shop DC Collectibles'
+
+                },
+
+            ],
+
+            shopBars: [
+                {
+                    text: 'Term of use'
+                },
+                {
+                    text: 'Privacy policy (New)'
+                },
+                {
+                    text: 'Ad Choices'
+                },
+                {
+                    text: 'Advertising'
+                },
+                {
+                    text: 'jobs'
+                },
+                {
+                    text: 'Substractions'
+                },
+                {
+                    text: 'Talent Workshops'
+                },
+                {
+                    text: 'CPSC Certificates'
+                },
+                {
+                    text: 'Ratings'
+                },
+                {
+                    text: 'Sjop Help'
+                },
+                {
+                    text: 'Conctact Us'
+                },
+            ],
+
+            sitesLink: [
+                {
+                    text: 'DC'
+                },
+                {
+                    text: 'MAD Magazine'
+                },
+                {
+                    text: 'DC Kids'
+                },
+                {
+                    text: 'DC Universe'
+                },
+                {
+                    text: 'DC Power Visa'
+                },
+
+
+            ]
+
 
         }
     }
@@ -16,42 +121,25 @@ export default {
         <div class="container-text">
             <div class="mini-text">
                 <h3 class="text">DC COMICS</h3>
-                <p>Characters</p>
-                <p>Comics</p>
-                <p>Movie</p>
-                <p>Tv</p>
-                <p>Gsmes</p>
-                <p>Videos</p>
-                <p>News</p>
+                <p v-for="(link, index) in menuLinks" key="index">{{ link.text }}</p>
+
                 <h2 class="text">Shop</h2>
-                <p>Shop DC</p>
-                <p>Shop DC Collectibles</p>
+                <p v-for="(link, index) in shopComics " key="index">{{ link.text }}</p>
+
             </div>
 
 
             <div class="mini-text container2">
                 <h2 class="text">DC</h2>
-                <p>Term of use</p>
-                <p>Privacy policy (New)</p>
-                <p>Ad Choices</p>
-                <p>Advertising</p>
-                <p>jobs</p>
-                <p>Substractions</p>
-                <p>Talent Workshops</p>
-                <p>CPSC Certificates</p>
-                <p>Ratings</p>
-                <p>Sjop Help</p>
-                <p>Conctact Us</p>
+                <p v-for="(link, index) in shopBars" key="index">{{ link.text }}</p>
+
             </div>
 
 
             <div class="mini-text container3">
                 <h2 class="text">SITES</h2>
-                <p>DC</p>
-                <p>MAD Magazine</p>
-                <p>DC Kids</p>
-                <p>DC Universe</p>
-                <p>DC Power Visa</p>
+                <p v-for="(link, index) in sitesLink " key="index">{{ link.text }}</p>
+
             </div>
 
             <div class="bg-logo">
