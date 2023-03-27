@@ -1,7 +1,12 @@
 <script>
 export default {
-    name: 'TheFooter'
-}
+    name: 'TheFooter',
+    data() {
+        return {
+
+        }
+    }
+};
 </script>
 
 
