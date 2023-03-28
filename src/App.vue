@@ -2,11 +2,13 @@
 import TheHeader from "./components/TheHeader.vue"
 import TheFooter from "./components/TheFooter.vue"
 import ProductList from "./components/ProductList.vue"
+
 export default {
   components: {
     TheHeader,
     TheFooter,
-    ProductList
+
+    ProductCard
 
 
   },
@@ -61,6 +63,7 @@ export default {
 
   <main>
     <ProductList></ProductList>
+
 
     <div class="container-mid">
       <div class="container-items">
