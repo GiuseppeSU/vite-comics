@@ -1,5 +1,5 @@
 <script>
-import ProductCard from "./components/ProductCard.vue"
+import ProductCard from './ProductCard.vue';
 export default {
 
     name: 'ProductList',
@@ -8,22 +8,22 @@ export default {
     },
     fumetti: [
         {
-            thumb: "https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640",
-            price: "$19.99",
-            series: "Action Comics",
-            type: "comic book"
+            "thumb": "https://static.dc.com/2023-03/LEGIONOB_Cv1_00111_DIGITAL.jpg?w=640",
+            "price": "$19.99",
+            "series": "Action Comics",
+            "type": "comic book"
         },
         {
-            thumb: "https://static.dc.com/2023-03/BA_Cv9_00911_DIGITAL.jpg?w=640",
-            price: "$3.99",
-            series: "American Vampire 1976",
-            type: "comic book"
+            "thumb": "https://static.dc.com/2023-03/BA_Cv9_00911_DIGITAL.jpg?w=640",
+            "price": "$3.99",
+            "series": "American Vampire 1976",
+            "type": "comic book"
         },
         {
-            thumb: "https://static.dc.com/2023-03/ST_GH_Cv3_00311_DIGITAL.jpg?w=640",
-            price: "$16.99",
-            series: "Aquaman",
-            type: "graphic novel"
+            "thumb": "https://static.dc.com/2023-03/ST_GH_Cv3_00311_DIGITAL.jpg?w=640",
+            "price": "$16.99",
+            "series": "Aquaman",
+            "type": "graphic novel"
         },
         {
             "thumb": "https://static.dc.com/2023-03/MS30A_Cv1_00111_DIGITAL.jpg?w=640",
@@ -84,6 +84,13 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+    <div class="Products">
+        <div v-for="(fumetto, index) in fumetti" :key="index" class="card">
+            <ProductCard :image="fumetto.thumb" :title="fumetto.series" />
+        </div>
+
+    </div>
+</template>
 
 <style lang="scss" scoped></style>

@@ -7,8 +7,8 @@ export default {
   components: {
     TheHeader,
     TheFooter,
+    ProductList
 
-    ProductCard
 
 
   },

@@ -1,7 +1,16 @@
 <script>
 export default {
-    name: 'ProductCard'
+    name: 'ProductCard',
+    props: {
+        image: String,
+        title: String
+    }
 }
 </script>
-<template></template>
+<template>
+    <div class="box">
+        <img :src="image" :alt="title">
+        <h3>{{ title }}</h3>
+    </div>
+</template>
 <style lang="scss" scoped></style>
