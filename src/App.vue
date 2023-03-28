@@ -1,10 +1,13 @@
 <script>
 import TheHeader from "./components/TheHeader.vue"
 import TheFooter from "./components/TheFooter.vue"
+import ProductList from "./components/ProductList.vue"
 export default {
   components: {
     TheHeader,
     TheFooter,
+    ProductList
+
 
   },
   data() {
@@ -57,9 +60,7 @@ export default {
   <TheHeader></TheHeader>
 
   <main>
-    <div class="content">
-      <h1>Il contenuto va qui!</h1>
-    </div>
+    <ProductList></ProductList>
 
     <div class="container-mid">
       <div class="container-items">
@@ -69,6 +70,8 @@ export default {
         </div>
       </div>
     </div>
+
+
 
   </main>
   <TheFooter></TheFooter>
