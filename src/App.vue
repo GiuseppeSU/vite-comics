@@ -65,6 +65,14 @@ export default {
     <ProductList></ProductList>
 
 
+
+
+    <div class="container-upper">
+
+
+    </div>
+
+
     <div class="container-mid">
       <div class="container-items">
         <div class="first-item" v-for="(img, index) in imageName">
