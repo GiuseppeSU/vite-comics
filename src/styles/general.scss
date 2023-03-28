@@ -113,6 +113,12 @@
 
     }
 
+    .mini-text p:hover {
+        color: variables.$color-primary;
+        cursor: pointer;
+
+    }
+
     .container2 {
         margin-left: 50px;
     }
@@ -185,14 +191,22 @@
 }
 
 
-.container-products {
+.container-upper {
     background-color: variables.$color-secondary;
 
 
 
 
+    img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
 
 
+.container-products {
+    background-color: variables.$color-secondary;
 
     .products {
         display: flex;
@@ -201,19 +215,11 @@
         margin: auto;
         padding: 30px;
 
-
-
-
         .card {
             width: calc(100% / 6);
             text-align: center;
             margin: 10px 0px;
-
-
-
         }
-
-
 
         .box img {
             height: 100px;

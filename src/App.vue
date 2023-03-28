@@ -62,15 +62,16 @@ export default {
   <TheHeader></TheHeader>
 
   <main>
-    <ProductList></ProductList>
 
 
 
 
     <div class="container-upper">
+      <img src="./assets/Dc comici.jpg" alt="Logo DC">
 
 
     </div>
+    <ProductList></ProductList>
 
 
     <div class="container-mid">
